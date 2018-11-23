@@ -1,5 +1,5 @@
 <?php
 
-$company = 'Transcosmos';
+$company = 'Laracasts';
 
 require 'views/about-culture.view.php';
