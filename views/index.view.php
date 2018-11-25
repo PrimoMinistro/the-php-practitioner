@@ -1,16 +1,17 @@
 <?php require('partials/head.php'); ?>
 
-    <h1>Task for the day</h1>
     <ul>
-        <?php foreach ($tasks as $task) : ?>
-
-            <?php if ($task->completed) : ?>
-                <li><strike><?= $task->description; ?></strike></li>
-            <?php else: ?>
-                <li><?= $task->description; ?></li>
-            <?php endif; ?>
-
-        <?php endforeach; ?>
+    <?php foreach ($users as $user) : ?>
+        <li><?= $user->name; ?></li>
+    <?php endforeach; ?>
     </ul>
+
+    <p><?= 'Total: ' . $usersCount; ?></p>
+
+    <h1>Submit Your Name</h1>
+    <form method="POST" action="/names">
+        <input name="name">
+        <button type="submit">Submit</button>
+    </form>
 
 <?php require('partials/footer.php');
