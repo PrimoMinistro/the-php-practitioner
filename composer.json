@@ -1,4 +1,10 @@
 {
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    
     "require": {
         "symfony/var-dumper": "^4.1"
     }
