@@ -1,5 +1,6 @@
 <?php require('partials/head.php'); ?>
 
+    <h1>All Users</h1>
     <ul>
     <?php foreach ($users as $user) : ?>
         <li><?= $user->name; ?></li>
